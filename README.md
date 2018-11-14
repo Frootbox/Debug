@@ -1,2 +1,2 @@
 # Debug
-Debugging Library
+General Purpose Debugging Library
