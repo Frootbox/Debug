@@ -3,7 +3,7 @@
  * 
  */
 
-namespace Frootbox\Debug;
+// namespace Frootbox\Debug;
 
 function d ( $input ) {
     
