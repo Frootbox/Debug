@@ -7,6 +7,8 @@
 
 function d ( $input ) {
     
+    http_response_code(500);
+
     while (ob_get_level() > 0) {
         ob_end_flush();
     }
