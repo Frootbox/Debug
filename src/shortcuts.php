@@ -38,3 +38,12 @@ function p ( $input ) {
     
     echo "</pre>";
 }
+
+function l ( $input = null ) {
+
+    $bt = debug_backtrace();
+    $caller = array_shift($bt);
+
+    p('Line: ' . $caller['line'] . ' @ File ' . $caller['file']);
+    d($input);
+}
