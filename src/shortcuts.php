@@ -47,3 +47,14 @@ function l ( $input = null ) {
     p('Line: ' . $caller['line'] . ' @ File ' . $caller['file']);
     d($input);
 }
+
+function dumpBacktrace(array $backtrace) {
+
+    foreach ($backtrace as $section) {
+        p($section['file']);
+        p($section['line']);
+    }
+
+    exit;
+
+}
